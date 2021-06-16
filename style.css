@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;700&family=Crimson+Pro:wght@300;400;500&display=swap");
+@media (min-width: 830px) {
+  .mobile-menu, .menu-close, .menu {
+    display: none !important;
+  }
+
+  body {
+    padding: 0 3rem !important;
+  }
+
+  nav {
+    padding-right: 8rem !important;
+  }
+  nav .menu {
+    display: none !important;
+  }
+  nav ul {
+    display: flex !important;
+  }
+  nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+  }
+  main .left {
+    flex: 1 !important;
+    margin-right: 2rem !important;
+  }
+  main .preview {
+    flex: 2 !important;
+  }
+  main .preview .interior-image {
+    width: 85% !important;
+  }
+  main .preview .card {
+    right: 4rem !important;
+  }
+
+  .title {
+    font-size: 48px !important;
+  }
+
+  .paragraph {
+    font-size: 24px !important;
+  }
+
+  .readmore {
+    font-size: 18px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+.menu,
+.readmore,
+a {
+  cursor: pointer;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #181719;
+  color: #ffffff;
+}
+
+body {
+  padding: 1rem;
+}
+
+nav {
+  background: #181719;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  padding: 2rem 2rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav .left button {
+  font-family: "Crimson Pro", verdana;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  background: #181719;
+  padding: 5px 15px;
+}
+nav .right .menu {
+  position: absolute;
+  right: 2rem;
+  z-index: 999;
+  font-size: 2rem;
+}
+nav .right .menu-close {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  z-index: 100;
+}
+nav .right ul {
+  display: none;
+  list-style: none;
+}
+nav .right ul li {
+  margin: 0 2rem;
+}
+nav .right ul li:nth-of-type(1) {
+  border-bottom: solid 3px #ffffff;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 120px;
+  margin-bottom: 10rem;
+}
+main .title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: "Lora", sans-serif;
+}
+main .paragraph {
+  font-family: "Montserrat", sans-serif;
+  max-width: 300px;
+}
+main .readmore {
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  line-height: 17px;
+}
+main .readmore a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+main .readmore svg {
+  margin-left: 1rem;
+}
+main .preview {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .preview .card {
+  position: absolute;
+  bottom: -10rem !important;
+  right: 2rem;
+  padding: 2rem;
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5rem);
+  width: 80%;
+  min-width: 250px;
+  max-width: 460px;
+}
+main .preview .card .card-top {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+main .preview .card .card-top img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+main .preview .card .card-top .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .preview .card .card-top .details .role {
+  color: #828282;
+  font-size: small;
+}
+main .preview .card h3 {
+  font-family: "Lora", sans-serif;
+}
+
+.mobile-menu {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  background: #181719;
+  z-index: 850;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mobile-menu ul {
+  list-style: none;
+}
+.mobile-menu ul li:first-child a {
+  border-bottom: solid 2px #ffffff;
+  font-weight: 700;
+}
+.mobile-menu ul li {
+  margin: 3rem 0rem;
+  text-align: center;
+}
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.toggle {
+  display: none;
+}
+
+.menu.toggle {
+  display: none;
+}
+
+.menu-close.toggle {
+  display: block !important;
+}
+
+.mobile-menu.toggle {
+  display: flex;
+}
+
+.attribution {
+  padding-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.attribution a {
+  color: #828282;
+}/*# sourceMappingURL=style.css.map */
