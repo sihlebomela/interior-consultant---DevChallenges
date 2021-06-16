@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://interior-consultant-dev-challenges-rose.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://">
+    <a href="https://github.com/trinitysenpai/interior-consultant---DevChallenges">
       Solution
     </a>
     <span> | </span>
